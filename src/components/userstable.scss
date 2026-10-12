@@ -1,0 +1,38 @@
+@use "../styles/index.scss" as *;
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  @include tableDesign;
+  min-width: 700px;
+
+  tbody td {
+    border: 1px solid $border-color;
+  }
+
+  thead th {
+    background-color: $darkblue;
+    color: white;
+  }
+}
+
+table tbody td,
+table thead th {
+  padding: 8px;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: rgb(224, 224, 224);
+}
+
+tbody tr:hover {
+  background-color: rgb(177, 224, 255);
+  cursor: pointer;
+}
+
+.autocomplete-table {
+  margin-inline: auto;
+}

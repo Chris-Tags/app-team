@@ -1,0 +1,9 @@
+@use "../styles/index.scss" as *;
+
+input {
+  margin-top: $space-l;
+  @include inputDesign;
+  width: 100%;
+  max-width: 580px;
+  box-sizing: border-box;
+}

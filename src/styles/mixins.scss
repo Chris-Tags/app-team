@@ -1,0 +1,27 @@
+@use "./variables.scss" as *;
+
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: $space-m;
+}
+
+@mixin tableDesign {
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+}
+
+@mixin inputDesign {
+  font-size: 20px;
+  padding: 1rem;
+}
+
+@mixin button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: $radius-s;
+}
